@@ -1,0 +1,86 @@
+.principalContainerCatalogHeader {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mali", cursive;
+}
+
+.catalogContainerHeader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #ff9797;
+  border-bottom: #ff9797 dashed 5px;
+}
+
+.catalogTitle {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.catalogSearch {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 1rem;
+  font-family: "Mali", cursive;
+}
+
+.catalogSearch input {
+  font-family: "Mali", cursive;
+  border: #ff9797 solid 2px;
+  padding: 5px;
+  border-radius: 0.2rem;
+  width: 20vw;
+}
+
+.catalogSearch input::placeholder {
+  color: #ff9797;
+}
+
+.catalogOrder select {
+  font-family: "Mali", cursive;
+  border: #ff9797 solid 2px;
+  padding: 5px;
+  border-radius: 0.2rem;
+  color: white;
+    background-color: #ff9797;
+}
+
+/* Responsive */
+@media (max-width: 550px) {
+  .catalogContainerHeader {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .catalogTitle{
+    font-size: 1rem;
+    margin: 5px;
+  }
+
+  .catalogSearch{
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .catalogSearch input{
+    width: 40vw;
+  }
+
+}
+
+@media (max-width: 768px) and (min-width: 550px) {
+  .catalogSearch input {
+    width: 35vw;
+  }
+}

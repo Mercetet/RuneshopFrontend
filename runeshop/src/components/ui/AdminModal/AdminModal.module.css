@@ -1,0 +1,189 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.principalContainerAdminModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  min-width: 320px;
+  max-width: 95vw;
+  height: auto;
+  padding: 32px 28px 24px 28px;
+  background-color: #faedd8;
+  box-shadow: 0 4px 16px rgba(255, 125, 64, 0.1);
+  border-radius: 16px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.containerDataAdminModal {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: "Mali", cursive;
+  gap: 18px;
+}
+
+.containerTitleAdminModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerTitleAdminModal h1 {
+  font-size: 1.5rem;
+  color: #ff9999;
+  font-family: "Mali", cursive;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.containerInfoAdminModal {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+}
+
+.containerInfoAdminModal p {
+  background-color: #fec1c1;
+  border: 1px solid #ff9999;
+  color: #3a2d1a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  font-family: "Mali", cursive;
+  margin: 0;
+  box-shadow: 0 1px 4px #ffbcbc22;
+  overflow-x: auto;
+  white-space: pre-line;
+}
+
+.containerImageAdminModal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fec1c1;
+  border: 1px solid #ff9999;
+  border-radius: 4px;
+  width: 95%;
+  max-height: 100px;
+  max-width: 100%;
+  overflow: auto;
+  gap: 10px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.containerImageAdminModal img {
+  width: 20%;
+  height: 20%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.imageAdminModal {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #fff;
+  border: 1px solid #ffbcbc;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.07);
+}
+
+.containerStatusAdminModal p {
+  background: none;
+  border: none;
+  color: #ff9999;
+  font-family: "Mali", cursive;
+  font-size: 1rem;
+}
+
+.containerButtonAdminModal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.containerButtonAdminModal button {
+  padding: 10px 22px;
+  background-color: #ff9999;
+  border: none;
+  border-radius: 6px;
+  color: #faeae4;
+  cursor: pointer;
+  font-family: "Mali", cursive;
+  font-size: 1rem;
+  font-weight: 600;
+  width: auto;
+  min-width: 110px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #ff999933;
+}
+
+.containerButtonAdminModal button:hover {
+  background-color: #ff9999;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1000px) and (min-width: 600px) {
+  .principalContainerAdminModal {
+    width: 75vw;
+    padding: 18px 4vw;
+  }
+  .containerInfoAdminModal p {
+    width: 96%;
+  }
+  .containerImageAdminModal {
+    width: 97%;
+    min-height: 75px;
+    max-width: 97%;
+  }
+  .containerImageAdminModal img {
+    width: 14%;
+    height: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .principalContainerAdminModal {
+    width: 70vw;
+  }
+  .containerInfoAdminModal{
+    gap: 10px;
+  }
+  .containerTitleAdminModal h1 {
+    font-size: 1.1rem;
+  }
+  .containerButtonAdminModal {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .containerButtonAdminModal button {
+    width: 100%;
+    padding: 10px 0;
+    min-width: unset;
+  }
+  .containerImageAdminModal{
+    max-width: 94%;
+  }
+}

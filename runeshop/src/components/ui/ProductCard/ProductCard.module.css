@@ -1,0 +1,108 @@
+.productCard {
+  background-color: #faedd8;
+  width: 222px; 
+  min-width: 222px;
+  max-width: 222px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.productCard:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transform: translateY(-4px) scale(1.03);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.productImage {
+  height: 55%;
+  width: 85%;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+.productData {
+  display: flex;
+  flex-direction: column;
+  height:30%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Mali", cursive;
+}
+
+.productData h3 {
+  color: #ff9797;
+  font-size: 1.5rem;
+}
+
+.productData p {
+  font-size: 1.1rem;
+}
+
+
+.productInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mali", cursive;
+  margin-bottom: 10px;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff4d4f;
+  color: #fff;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+.oldPrice {
+  color: #bdbdbd;
+  text-decoration: line-through;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.discountPrice {
+  color: #ff4d4f;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+@media (max-width: 529px) {
+  .productCard{
+    width: 47%;
+    min-width: 47%;
+    max-width: 47%;
+    height: 240px
+  }
+.productImage {
+  height: 57%;
+  width: 80%;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.productData h3 {
+  color: #ff9797;
+  font-size: 1rem;
+}
+
+.productData p {
+  font-size: 0.8rem;
+}
+
+
+}

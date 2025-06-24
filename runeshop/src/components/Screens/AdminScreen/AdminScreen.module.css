@@ -1,0 +1,21 @@
+.containerAdminScreen {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.containerAdminScreenContent {
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-around;
+	width: 100vw;
+	height: 68%;
+	align-items: center;
+}
+
+@media (max-width: 910px) {
+	.containerAdminScreenContent {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}

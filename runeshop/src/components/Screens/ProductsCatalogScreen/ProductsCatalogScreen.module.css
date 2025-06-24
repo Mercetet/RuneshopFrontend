@@ -1,0 +1,21 @@
+.containerProductsCatalogScreen {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.containerProductsCatalogScreenContent {
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-around;
+	width: 100vw;
+	height: 67%;
+	align-items: center;
+}
+
+@media (max-width: 910px) {
+	.containerProductsCatalogScreenContent {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}

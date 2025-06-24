@@ -1,0 +1,200 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+}
+
+.principalContainerLogin {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30vw;
+	padding: 20px;
+	background-color: #faedd8;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+.containerDataLogin {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Mali", cursive;
+	height: 95%;
+	justify-content: space-between;
+}
+
+.containerTitleLogin {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	height: 30%;
+}
+
+.containerTitleLogin span {
+	color: #ff9999;
+	font-size: 5rem;
+}
+
+.containerInputLogin {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.inputContainer {
+	position: relative;
+	width: 100%;
+	margin-bottom: 18px;
+}
+
+.error {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	font-size: 0.8rem;
+	margin: 0;
+	width: 100%;
+	height: 20px;
+}
+
+.containerInputLogin input {
+	width: 25vw;
+	padding: 10px;
+	margin: 5px 0 0 0;
+	background-color: #fec1c1;
+	border: 1px solid #ff9999;
+	border-radius: 4px;
+}
+
+.containerInputLogin input::placeholder {
+	background: #fec1c1;
+	font-family: "Mali", cursive;
+	color: #faeae4;
+}
+
+.containerButtonLogin {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 12px;
+	margin-top: 20px;
+}
+
+.containerButtonLogin button {
+	padding: 12px 24px;
+	font-size: 1.2rem;
+	background-color: #ff9999;
+	border: none;
+	border-radius: 6px;
+	color: #faeae4;
+	cursor: pointer;
+	font-family: "Mali", cursive;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.containerButtonLogin button:hover {
+	transform: scale(1.05);
+}
+
+.containerRegisterLogin button {
+	background: none;
+	border: none;
+	color: #ff9999;
+	cursor: pointer;
+	font-family: "Mali", cursive;
+	text-decoration: underline;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.submitbtn:disabled {
+	cursor: not-allowed;
+	box-shadow: none;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+
+
+.containerRegisterLogin button:hover {
+	transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 553px) {
+    .principalContainerLogin{
+        width: 70vw;
+        height: 45vh;
+    }
+	.containerTitleLogin{
+		margin-bottom: 0;
+	}
+	.containerTitleLogin span{
+		font-size: 3rem;
+	}
+	.containerTitleLogin h1{
+		font-size: 1.5rem;
+	}
+	.inputContainer{
+		margin-bottom: 22px;
+	}
+	 .error {
+		height: 18px;
+		font-size: 0.6rem;
+	 }
+    .containerInputLogin input{
+        width: 60vw;
+    }
+    .containerButtonLogin{
+        width: 100%;
+		margin-top: 8px;
+		align-content: center;
+		flex-direction: column;
+    }
+	.containerButtonLogin button{
+		font-size: 1rem;
+		width: 85%;
+	}
+
+}
+
+
+@media (max-width: 800px) and (min-width: 553px) {
+    .principalContainerLogin{
+        width: 70vw;
+        height: 42vh;
+    }
+    .containerInputLogin input{
+        width: 60vw;
+    }
+    .containerButtonLogin{
+        width: 60vw;
+    }
+}
+
+@media (max-width: 1350px) and (min-width: 800px) {
+	.principalContainerLogin {
+		width: 35%;
+		height: 44%;
+	}
+	.containerInputLogin{
+		height: 40%;
+	}
+	.containerInputLogin input {
+		width: 30vw;
+	}
+	.inputContainer {
+		margin-bottom: 30px;
+	}
+	.error {
+		bottom: -18px;
+		height: 18px;
+		font-size: 0.7rem;
+	}
+}
+

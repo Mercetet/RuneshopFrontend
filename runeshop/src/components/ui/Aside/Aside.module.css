@@ -1,0 +1,202 @@
+.principalContainerAside{
+  display: flex;
+  flex-direction: column;
+  width: 24vw;
+  height: 95%;
+  overflow: hidden;
+  background-color: #FF9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.filtersContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 95%;
+  overflow-y: auto;
+  font-family: 'Mali', cursive;
+  color: #fff;
+}
+
+.filterContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-start;
+  border-bottom: #fff 1px dashed;
+}
+
+.checkboxLabel{
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.checkboxLabel input[type="checkbox"] {
+  accent-color: #FAEDD8;
+}
+
+.sizeContainer {
+  margin: 1rem 0;
+}
+
+.checkboxSizeContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sizeLabel {
+  position: relative;
+  background-color: #FF9999;
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-weight: bold;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.sizeLabel:hover {
+  border-color: #666;
+  background-color: #FFE5BC;
+  color: #666;
+}
+
+.hiddenCheckbox {
+  display: none;
+}
+
+.hiddenCheckbox:checked + span {
+  border-color: #666;
+  background-color: #FFE5BC;
+  color: #666;
+}
+
+.sizeLabel span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.sizeLabel::before {
+  content: attr(for);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.priceLabel input{
+  border: 2px solid #fff;
+  background-color: #FF9999;
+  width: 15vw;
+}
+
+.priceLabel input::placeholder{
+  font-family: 'Mali', cursive;
+  color: #fff;
+}
+
+.buttonFilter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  background-color: #FAEDD8;
+  color: #FF9999;
+  font-family: 'Mali', cursive;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin: 4px;
+  padding: 7px;
+  align-self: center;
+}
+
+.menuIconMobile {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenu button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 910px) {
+  .principalContainerAside{
+    display: none;
+    align-items: center;
+  }
+
+  .menuIconMobile {
+    display: block;
+    padding: 5px;
+    color: #FF9999;
+    cursor: pointer;
+    margin-top: 5px;
+    height: 3%;
+  }
+
+  .mobileMenu {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    width: 96%;
+    background-color: #FF9999;
+    max-height: 55%;
+    overflow-y: auto;
+    border-radius: 4px;
+    font-family: 'Mali', cursive;
+    color: #fff;
+  }
+
+  .mobileMenu h2{
+    font-size: 1.5rem;
+  }
+
+  .buttonFilter{
+    font-size: 1rem;
+  }
+
+  .filterContainer{
+    font-size: 1.3rem;
+  }
+
+  .checkboxSizeContainer{
+    width: 75%;
+  }
+
+  .filterContainer span{
+    font-size: 1.5rem;
+  }
+
+  .priceLabel input{
+    height: 50%;
+    width: 100%;
+    font-size: 20px;
+  }
+}
