@@ -63,6 +63,6 @@ npm run dev
 ---
 
 ## Integrantes
-. Mercedes Tetilla
-. Rodrigo Romero
-. Valentin Curiel
+- Mercedes Tetilla
+- Rodrigo Romero
+- Valentin Curiel
