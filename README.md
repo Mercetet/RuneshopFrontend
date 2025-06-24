@@ -47,7 +47,7 @@ Incluye autenticación JWT, subida de imágenes a Cloudinary, integración con M
 ## Instalación
 
 Este frontend depende de una API RESTful para usuarios, productos, órdenes y pagos.
-🔗 Repositorio del backend: [runeshop-backend](https://github.com/Vale-source/Runeshop/tree/backend)
+🔗 Repositorio del backend: [runeshop-backend](https://github.com/Mercetet/Runeshop-Backend/tree/main)
 
 Importante: Para que la aplicación funcione correctamente, también debés levantar el proyecto del backend (Runeshop) disponible en el enlace anterior.
 
